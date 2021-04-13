@@ -1,3 +1,4 @@
+package Spring_Exercise;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class MainClass {
