@@ -12,11 +12,13 @@ public class WordRegisterServiceUseAutowired {
 //	@Qualifier("usedDao")
 	private WordDao wordDao;
 	
+	// 생성자에 Autowired 없이 Property나 Method에 Autowired 사용 시, Default 생성자 꼭 선언 필요
 	public WordRegisterServiceUseAutowired() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
-//	@Autowired
+	// 생성자 Parameter의 객체를 type(WordDao)으로 찾아 자동으로 연결
+	@Autowired
 	public WordRegisterServiceUseAutowired(WordDao wordDao) {
 		this.wordDao = wordDao;
 	}

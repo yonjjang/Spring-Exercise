@@ -39,7 +39,7 @@ public class MainClassUseXMLs {
 				"Law", "Statistics", "Computer", "Economics", "Public Administration"};
 
 //		StudentAssembler assembler = new StudentAssembler();
-		String[] appCtxs = {"classpath:appCtx1.xml", "classpath:appCtx2.xml", "classpath:appCtx3.xml"};
+		String[] appCtxs = {"classpath:ems.member_UseXMLs_appCtx1.xml", "classpath:ems.member_UseXMLs_appCtx2.xml", "classpath:ems.member_UseXMLs_appCtx3.xml"};
 		GenericXmlApplicationContext ctx = 
 				new GenericXmlApplicationContext(appCtxs);
 		

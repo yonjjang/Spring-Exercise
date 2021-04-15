@@ -19,7 +19,7 @@ public class MainClassUseResource {
 //		GenericXmlApplicationContext ctx = 
 //				new GenericXmlApplicationContext("classpath:appCtxUseAutowired.xml");
 		GenericXmlApplicationContext ctx = 
-				new GenericXmlApplicationContext("classpath:appCtxUseResource.xml");
+				new GenericXmlApplicationContext("classpath:com.word_UseResource_appCtx.xml");
 		
 		WordRegisterServiceUseResource registerService = 
 				ctx.getBean("registerService", WordRegisterServiceUseResource.class);

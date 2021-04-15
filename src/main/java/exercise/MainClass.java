@@ -1,4 +1,4 @@
-package Spring_Exercise;
+package exercise;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class MainClass {
@@ -8,7 +8,7 @@ public class MainClass {
 		//TransportationWalk transportationWalk = new TransportationWalk();
 		//transportationWalk.move();
 		
-		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:exercise_applicationContext.xml");
 		
 		TransportationWalk transportationWalk = ctx.getBean("tWalk", TransportationWalk.class);
 		transportationWalk.move();

@@ -40,7 +40,7 @@ public class MainClassUseXMLsImport {
 
 //		StudentAssembler assembler = new StudentAssembler();
 		GenericXmlApplicationContext ctx = 
-				new GenericXmlApplicationContext("classpath:appCtxImport.xml");
+				new GenericXmlApplicationContext("classpath:ems.member_UseXMLsImport_appCtx.xml");
 		
 		EMSInformationService informationService = ctx.getBean("informationService", EMSInformationService.class);
 		informationService.outputEMSInformation();

@@ -1,4 +1,4 @@
-package Spring_Exercise;
+package exercise;
 
 public class TransportationWalk {
 	

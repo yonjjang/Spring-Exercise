@@ -5,8 +5,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
  		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<import resource="classpath:appCtx2.xml"/>
-	<import resource="classpath:appCtx3.xml"/>
+	<import resource="classpath:ems.member_UseXMLs_appCtx2.xml"/>
+	<import resource="classpath:ems.member_UseXMLs_appCtx3.xml"/>
 
 	<bean id="studentDao" class="ems.member.dao.StudentDao" ></bean>
 	

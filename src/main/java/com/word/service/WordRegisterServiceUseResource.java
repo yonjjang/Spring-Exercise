@@ -9,15 +9,18 @@ import com.word.dao.WordDao;
 
 public class WordRegisterServiceUseResource {
 
+	// 객체를 이름(wordDao)으로 찾아 자동으로 연결
 	@Resource
 //	@Qualifier("usedDao")
 	private WordDao wordDao;
 	
+	// 생성자에 Resource 없이 Property나 Method에 Resource 사용 시, Default 생성자 꼭 선언 필요
 	public WordRegisterServiceUseResource() {
 		
 	}
 	
-	//@Resource
+	// 생성자가 아닌 Property, Method에만 사용 가능
+//	@Resource
 	public WordRegisterServiceUseResource(WordDao wordDao) {
 		this.wordDao = wordDao;
 	}

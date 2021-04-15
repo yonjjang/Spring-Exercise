@@ -17,7 +17,7 @@ public class MainClass {
 				"스프링 프레임워크는 자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크로서 간단히 스프링이라고도 불린다."};
 		
 		GenericXmlApplicationContext ctx = 
-				new GenericXmlApplicationContext("classpath:appCtx.xml");
+				new GenericXmlApplicationContext("classpath:com.word_appCtx.xml");
 		
 		WordRegisterService registerService = 
 				ctx.getBean("registerService", WordRegisterService.class);

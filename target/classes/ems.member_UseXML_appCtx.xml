@@ -5,8 +5,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="tWalk" class="Spring_Exercise.TransportationWalk" />
-	
 	<bean id="studentDao" class="ems.member.dao.StudentDao" ></bean>
 	
 	

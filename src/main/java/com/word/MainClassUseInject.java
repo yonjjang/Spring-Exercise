@@ -19,7 +19,7 @@ public class MainClassUseInject {
 				"스프링 프레임워크는 자바 플랫폼을 위한 오픈소스 애플리케이션 프레임워크로서 간단히 스프링이라고도 불린다."};
 		
 		GenericXmlApplicationContext ctx = 
-				new GenericXmlApplicationContext("classpath:appCtxUseInject.xml");
+				new GenericXmlApplicationContext("classpath:com.word_UseInject_appCtx.xml");
 		
 		WordRegisterServiceUseInject registerService = 
 				ctx.getBean("registerService", WordRegisterServiceUseInject.class);
