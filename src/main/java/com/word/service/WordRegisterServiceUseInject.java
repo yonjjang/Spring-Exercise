@@ -8,8 +8,9 @@ import com.word.dao.WordDao;
 
 public class WordRegisterServiceUseInject {
 
-	@Inject
-	@Named(value="wordDao1")
+	// 생성자 Parameter의 객체를 이름(WordDao)으로 찾아 자동으로 연결
+	@Inject // 생성하려는 객체 이
+	@Named(value="wordDao1") // 생성자 Parameter의 객체의 이름(WordDao)으로 찾을 수 없다면, 객체 이름을 직접 따로 지정해줌으로써 appCtx 내 해당 객체와 연결
 	private WordDao wordDao;
 	
 	public WordRegisterServiceUseInject() {
